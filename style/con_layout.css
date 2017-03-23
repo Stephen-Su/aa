@@ -26,6 +26,29 @@
 .header .head ul.nav li a{
 	color:#FFF;
 	}
+	
+.header .head .so{
+	padding-top:8px;
+	width:260px;
+	height:30px;
+	}		
+.header .head .so form input.text{
+	width:209px;
+	height:30px;
+	background:#fff;
+	text-indent:8px;
+	line-height:30px;
+	float:left;
+	font-size:12px;
+	}	
+.header .head .so form input.sub{
+	width:51px;
+	height:30px;
+	float:right;
+	background:url(../images/sub.png) no-repeat center center;
+	cursor:pointer;
+	display:inline;
+	}	
 
 /*
 *header end
@@ -46,6 +69,15 @@
 	line-height:30px;
 	
 	}
+.footer .down p.ft_l{
+	float:left;
+	font-size:12px;
+	color:#FFFFFF;
+	}
+.footer .down p.ft_l a{
+	font-size:12px;
+	color:#FFFFFF;
+	}	
 .footer .down p.ft_r{
 	float:right;
 	font-size:12px;
