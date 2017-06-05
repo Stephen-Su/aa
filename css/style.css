@@ -1,0 +1,64 @@
+body {
+    padding-top: 130px;
+    font-family: "微软雅黑";
+}
+.my-nav{
+    background-color: white;
+}
+.my-logo{
+    display: inline-block;
+    vertical-align: middle;
+    padding-bottom: 60px;
+}
+.my-head{
+    position: relative;
+}
+.my-info{
+    position: absolute;
+    top: 10px;
+    right: 0;
+}
+.my-info .my-email{
+    padding-right: 10px;
+    color: #888;
+}
+.my-info .my-tel{
+    color: #888;
+}
+#menu li{
+    width: 110px;
+    text-align: right;
+}
+#menu li a{
+    font-size: 16px;
+    color: #333;
+    padding-right: 0;
+}
+#menu li.active a{
+    color: orangered;
+}
+#menu li a:hover,#menu li a:focus{
+    color: orangered;
+    background-color: transparent;
+}
+
+@media (min-width: 768px){
+    #menu{
+        margin-top: 60px;
+    }
+    .nav > li {
+        float: left;
+    }
+}
+@media (max-width: 425px) {
+    .my-logo{
+        padding-bottom: 50px;
+    }
+    .my-logo img{
+        /*-webkit-clip-path: inset(0px 63px 0px 0px);*/
+        /*clip-path: inset(0px 63px 0px 0px);*/
+        -webkit-transform:scale(.8);
+        transform:scale(.8);
+        margin-left: -20px;
+    }
+}
