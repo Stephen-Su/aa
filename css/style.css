@@ -1,5 +1,5 @@
 body {
-    padding-top: 130px;
+    padding-top: 97px;
     font-family: "微软雅黑";
 }
 .my-nav{
@@ -8,7 +8,10 @@ body {
 .my-logo{
     display: inline-block;
     vertical-align: middle;
-    padding-bottom: 60px;
+    padding-bottom: 45px;
+}
+.my-but{
+    margin-top: 30px;
 }
 .my-head{
     position: relative;
@@ -16,7 +19,7 @@ body {
 .my-info{
     position: absolute;
     top: 10px;
-    right: 0;
+    right: 15px;
 }
 .my-info .my-email{
     padding-right: 10px;
@@ -25,40 +28,46 @@ body {
 .my-info .my-tel{
     color: #888;
 }
-#menu li{
-    width: 110px;
-    text-align: right;
-}
 #menu li a{
     font-size: 16px;
     color: #333;
-    padding-right: 0;
 }
-#menu li.active a{
+#menu li a.active{
     color: orangered;
+    /*border-bottom: 2px solid orangered;*/
 }
 #menu li a:hover,#menu li a:focus{
     color: orangered;
     background-color: transparent;
 }
+#div0,#div1,#div2,#div3,#div4,#div5{
+    height: 600px;}
+#div0{background:rgb(230,230,230);}
+#div1{background:rgb(253,83,49);}
+#div2{background:rgb(192,10,185);}
+#div3{background:rgb(20,156,225);}
+#div4{background:rgb(249,152,49);}
+#div5{background:rgb(10,255,60);}
+#div6{background:rgb(219,230,247);}
+.bg2{background:rgba(255,255,255,0.8);position:fixed;z-index:5;top:0px;left:0px;margin-top:0px;}
 
 @media (min-width: 768px){
     #menu{
-        margin-top: 60px;
+        margin-top: 48px;
     }
     .nav > li {
         float: left;
     }
 }
-@media (max-width: 425px) {
-    .my-logo{
-        padding-bottom: 50px;
-    }
-    .my-logo img{
-        /*-webkit-clip-path: inset(0px 63px 0px 0px);*/
-        /*clip-path: inset(0px 63px 0px 0px);*/
-        -webkit-transform:scale(.8);
-        transform:scale(.8);
-        margin-left: -20px;
-    }
-}
+/*@media (max-width: 425px) {*/
+    /*.my-logo{*/
+        /*padding-bottom: 50px;*/
+    /*}*/
+    /*.my-logo img{*/
+        /*!*-webkit-clip-path: inset(0px 63px 0px 0px);*!*/
+        /*!*clip-path: inset(0px 63px 0px 0px);*!*/
+        /*-webkit-transform:scale(.8);*/
+        /*transform:scale(.8);*/
+        /*margin-left: -20px;*/
+    /*}*/
+/*}*/
