@@ -9,7 +9,6 @@ body {
     display: inline-block;
     vertical-align: middle;
     padding-bottom: 45px;
-    /*width: 200px;*/
 }
 .my-but{
     margin-top: 30px;
@@ -60,15 +59,14 @@ body {
     }
 }
 @media (max-width: 425px) {
-
-   /* .my-logo{
-        padding-bottom: 50px;
-    }
     .my-logo img{
-        !*-webkit-clip-path: inset(0px 63px 0px 0px);*!
-        !*clip-path: inset(0px 63px 0px 0px);*!
+        /*-webkit-clip-path: inset(0px 63px 0px 0px);*/
+        /*clip-path: inset(0px 63px 0px 0px);*/
         -webkit-transform:scale(.8);
+        -moz-transform: scale(.8);
+        -ms-transform: scale(.8);
+        -o-transform: scale(.8);
         transform:scale(.8);
-        margin-left: -20px;
-    }*/
+        transform-origin: 0 50%;
+    }
 }
