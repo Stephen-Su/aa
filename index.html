@@ -1,28 +1,38 @@
-﻿<html>
-  <head>
-  <link href="http://vjs.zencdn.net/5.5.3/video-js.css" rel="stylesheet">
-
-  <!-- If you'd like to support IE8 -->
-  <script src="http://vjs.zencdn.net/ie8/1.1.1/videojs-ie8.min.js"></script>
-
-
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript" src="flowplayer-3.2.13.min.js"></script>
+    <title>RTMP Sample Player FlowPlayer</title>
 </head>
 
 
 <body>
+<h1>RTMP Sample Player FlowPlayer</h1>
 
-  <h1>康康的直播间</h1>
- <video id="my-video" class="video-js" controls preload="auto" width="640" height="264"
- poster="https://img.alicdn.com/imgextra/i2/754328530/TB2FpxhkXXXXXa5XXXXXXXXXXXX_!!754328530.jpg" data-setup="{}">
-    <source src="rtmp://live.mudu.tv/watch/u1vobw" type="rtmp/flv">
-    <!-- 如果上面的rtmp流无法播放，就播放hls流 -->
-    <source src="http://10.10.5.119/live/livestream.m3u8" type='application/x-mpegURL'>
-    <p class="vjs-no-js">
-      To view this video please enable JavaScript, and consider upgrading to a web browser that
-      <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
-    </p>
- </video>
 
- <script src="http://vjs.zencdn.net/5.5.3/video.js"></script>
+
+<!-- this A tag is where your Flowplayer will be placed. it can be anywhere -->
+<a
+        href="#"
+        style="display:block;width:520px;height:330px"
+        id="player">
+</a>
+<!-- this will install flowplayer inside previous A- tag. -->
+<script>
+    flowplayer("player", "flowplayer-3.2.18.swf",{
+        clip: {
+            url: 'hks',
+            provider: 'rtmp',
+            live: true,
+        },
+        plugins: {
+            rtmp: {
+                url: 'flowplayer.rtmp-3.2.18.swf',
+                netConnectionUrl: 'rtmp://live.hkstv.hk.lxdns.com/live/hks'
+            }
+        }
+    });
+</script>
+
+
 </body>
-</html>
