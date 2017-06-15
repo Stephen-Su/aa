@@ -1,8 +1,11 @@
 body {
-
+    /*background:url(../img/tout.jpg) no-repeat center top;*/
 }
 .my-video{
     background-color: #333333;
+}
+.my-tt{
+    background: url(../img/tt.jpg) no-repeat center top;
 }
 @media (min-width: 768px){
 
