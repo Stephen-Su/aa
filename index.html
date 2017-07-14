@@ -1,45 +1,361 @@
-﻿<!doctype html>
-
-<html lang="en">
+<!DOCTYPE html>
+<html lang="zh-cn">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
-<title>Sewise Player</title>
-<script type="text/javascript" src="sewise.player.min.js"></script>
-<script type="text/javascript" charset="utf-8" src="./js/swfobject.js"></script>
-<style type="text/css" media="screen">
-#swf-container {
-	visibility: hidden
-}
-</style>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>直播帮</title>
+    <link rel="shortcut icon" href="./img/logo.ico" type="image/x-icon"/>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
 </head>
 <body>
-<div id="player" style="width: 500px; height: 302px; margin:10px; padding: 10px; border:2px solid #999;"> 
-  <script type="text/javascript">
-			SewisePlayer.setup({
-				server: "live",
-				type: "rtmp",
-				buffer: 3,
-				autostart: "true",
-		    skin: "liveWhite",
-				lang: "zh_CN",
-				claritybutton: "disable",
-				draggable: "false",
-		    streamurl: "rtmp://live.hkstv.hk.lxdns.com/live/hks",
-				
-				 title: "香港卫视直播"
-			}, "player");
-		</script>
-<!--<div style="position: relative; width:100%;max-width: 500px; height: 100%; left: 0px; top: 0px;">
-    <object type="application/x-shockwave-flash" id="sewise_player" name="sewise_player" data="/flash/SewisePlayer.swf" width="100%" height="100%">
-      <param name="allowfullscreen" value="true">
-      <param name="wmode" value="transparent">
-      <param name="allowscriptaccess" value="always">
-      <param name="flashvars" value="autoStart=true&amp;programId=&amp;shiftTime=&amp;buffer=3&amp;logo=source/logo.png&amp;lang=zh_CN&amp;type=rtmp&amp;serverPath=source/gateway.php&amp;serverApi=ServerApi.execute&amp;skin=./flash/skins/liveWhite.swf&amp;title=RTMP%E7%9B%B4%E6%92%AD&amp;draggable=false&amp;published=0&amp;streamUrl=rtmp%3A%2F%2Flive.chosun.gscdn.com%2Flive%2F%2Ftvchosun1.stream&amp;duration=3600&amp;poster=&amp;flagDatas=&amp;videosJsonUrl=&amp;adsJsonData=&amp;statistics=&amp;customDatas=&amp;playerName=Sewise Player&amp;copyright=(C) All right reserved the SEWISE inc 2011-2014&amp;playerVersion=Version: 2.5.2&amp;buildDate=Build: 2014.12.26 11:00&amp;clarityButton=disable&amp;timeDisplay=enable&amp;controlBarDisplay=enable&amp;topBarDisplay=enable&amp;customStrings=&amp;volume=0.6&amp;key=&amp;trackCallback=">
-    </object>
-  </div>-->
+<nav class="my-nav navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container my-head">
+        <div class="navbar-header my-logo">
+            <a class="navbar-brand" href="javascript:;">
+                <img alt="Brand" class="img-responsive" src="img/zbb-logo.png">
+            </a>
+        </div>
+        <button class="navbar-toggle my-but" type="button" data-toggle="collapse" data-target="#menu">
+            <span class="sr-only">Toggle Navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <div class="my-info pull-right hidden-xs">
+            <span class="glyphicon glyphicon glyphicon-envelope"></span>
+            <a class="my-email" href="email:szr125@163.com">szr125@163.com</a>
+            <span class="glyphicon glyphicon-phone"></span>
+            <a class="my-tel" href="tel:+86 13927472515">+86 13927472515</a>
+        </div>
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="nav navbar-right">
+                <li>
+                    <a id="navon0" href="#item1" class="active">首&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;页</a>
+                </li>
+                <li>
+                    <a id="navon1" href="#item2">业务介绍</a>
+                </li>
+                <li>
+                    <a id="navon2" href="#item3">案&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;例</a>
+                </li>
+                <li>
+                    <a id="navon3" href="#item4">关于我们</a>
+                </li>
+                <li>
+                    <a id="navon4" href="#item5">联系方式</a>
+                </li>
+                <!--<li>
+                    <a id="navon4" href="javascript:void(0)">联系方式</a>
+                </li>-->
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--<img src="img/tout.jpg" class="img-responsive center-block">-->
+<div id="content" class="container">
+    <div id="item1" class="item row">
+        <img src="img/tt.jpg" class="img-responsive center-block">
+        <div class="jumbotron col-md-7 col-xs-8 my-tt">
+            <h1>直播, 我帮你!</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, eius.</p>
+            <p class="hidden-xs"><a class="my-btn1 btn btn-primary btn-lg" href="./img/plan.pptx" role="button">直播方案</a></p>
+            <p class="hidden-xs"><a class="my-btn2 btn btn-primary btn-lg" href="./img/agreement.docx" role="button">直播协议</a></p>
+        </div>
+    </div>
+    <!--业务介绍-->
+    <div id="item2" class="item row">
+        <div class="col-sm-12 my-title-big"><h1 class="my-title-big-t1">业务介绍</h1></div>
+        <div class="col-xs-6 col-md-3">
+            <div class="thumbnail my-slt">
+                <img src="img/js-icon1a.png" class="my-img img-responsive center-block">
+                <img src="img/js-icon1.png" class="my-img-hid img-responsive center-block">
+                <div class="caption">
+                    <h3 class="my-title">高清直播</h3>
+                    <p class="my-title-m">专业摄像机加下编解码器<br>高质量现场直播</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-6 col-md-3">
+            <div class="thumbnail my-slt">
+                <img src="img/js-icon2a.png" class="my-img img-responsive center-block">
+                <img src="img/js-icon2.png" class="my-img-hid img-responsive center-block">
+                <div class="caption">
+                    <h3 class="my-title">VR直播</h3>
+                    <p class="my-title-m">利用VR摄像机进行360度VR直播<br>犹如莅临现场</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-6 col-md-3">
+            <div class="thumbnail my-slt">
+                <img src="img/js-icon3a.png" class="my-img img-responsive center-block">
+                <img src="img/js-icon3.png" class="my-img-hid img-responsive center-block">
+                <div class="caption">
+                    <h3 class="my-title">手机直播</h3>
+                    <p class="my-title-m">利用手机随时随地开展直播<br>方便、快速</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-6 col-md-3">
+            <div class="thumbnail my-slt">
+                <img src="img/js-icon4a.png" class="my-img img-responsive center-block">
+                <img src="img/js-icon4.png" class="my-img-hid img-responsive center-block">
+                <div class="caption">
+                    <h3 class="my-title">移动直播</h3>
+                    <p class="my-title-m">在户外运动时进行移动直播<br>如：滑雪、长跑等运动</p>
+                </div>
+            </div>
+        </div>
+
+        <!--直播平台-->
+        <div class="col-sm-12 my-title-big"><h1 class="my-title-big-t2">主要直播平台</h1></div>
+        <div class="col-xs-6 col-md-3 col-lg-2 my-pt">
+            <a href="javascript:;" class="thumbnail">
+                <img src="img/1.jpg" alt="...">
+            </a>
+        </div>
+        <div class="col-xs-6 col-md-3 col-lg-2 my-pt">
+            <a href="javascript:;" class="thumbnail">
+                <img src="img/2.jpg" alt="...">
+            </a>
+        </div>
+        <div class="col-xs-6 col-md-3 col-lg-2 my-pt">
+            <a href="javascript:;" class="thumbnail">
+                <img src="img/3.jpg" alt="...">
+            </a>
+        </div>
+        <div class="col-xs-6 col-md-3 col-lg-2 my-pt">
+            <a href="javascript:;" class="thumbnail">
+                <img src="img/4.jpg" alt="...">
+            </a>
+        </div>
+        <div class="col-xs-6 col-md-3 col-lg-2 my-pt">
+            <a href="javascript:;" class="thumbnail">
+                <img src="img/5.jpg" alt="...">
+            </a>
+        </div>
+        <div class="col-xs-6 col-md-3 col-lg-2 my-pt">
+            <a href="javascript:;" class="thumbnail">
+                <img src="img/6.jpg" alt="...">
+            </a>
+        </div>
+        <div class="col-xs-6 col-md-3 col-lg-2 my-pt">
+            <a href="javascript:;" class="thumbnail">
+                <img src="img/7.jpg" alt="...">
+            </a>
+        </div>
+        <div class="col-xs-6 col-md-3 col-lg-2 my-pt">
+            <a href="javascript:;" class="thumbnail">
+                <img src="img/8.jpg" alt="...">
+            </a>
+        </div>
+        <div class="col-xs-6 col-md-3 col-lg-2 my-pt">
+            <a href="javascript:;" class="thumbnail">
+                <img src="img/9.jpg" alt="...">
+            </a>
+        </div>
+        <div class="col-xs-6 col-md-3 col-lg-2 my-pt">
+            <a href="javascript:;" class="thumbnail">
+                <img src="img/10.jpg" alt="...">
+            </a>
+        </div>
+        <div class="col-xs-6 col-md-3 col-lg-2 my-pt">
+            <a href="javascript:;" class="thumbnail">
+                <img src="img/11.jpg" alt="...">
+            </a>
+        </div>
+        <div class="col-xs-6 col-md-3 col-lg-2 my-pt">
+            <a href="javascript:;" class="thumbnail">
+                <img src="img/12.jpg" alt="...">
+            </a>
+        </div>
+        <div class="col-xs-12 col-md-4  my-share-1">
+            <a href="javascript:;" class="thumbnail my-share">
+                <img src="img/wechat.png" alt="...">
+            </a>
+        </div>
+        <div class="col-xs-12 col-md-8  my-share-2">
+            <a href="javascript:;" class="thumbnail my-share">
+                <img src="img/media.png" alt="...">
+            </a>
+        </div>
+    </div>
+    <div id="item3" class="item row">
+        <div class="col-sm-12 my-title-big"><h1 class="my-title-big-t1">案&nbsp;&nbsp;&nbsp;&nbsp;例</h1></div>
+        <div class="hw-layer hidden-xs">
+            <div class="hw-layer-wrap">
+                <span class="glyphicon glyphicon-remove hwLayer-close hidden-xs"></span>
+                <div class="row">
+                    <div class="col-md-12">
+                        <video width="100%" loop="true" preload="auto" preload="metadata" controls="controls" >
+                            <source src="">
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-md-6 my-video hidden-xs">
+            <a href="javascript:;" class="thumbnail my-video-link" data-src="./video/vid-1.mp4">
+                <img src="img/video1.jpg" alt="...">
+            </a>
+            <h4 class="my-title-video">手机直播</h4>
+        </div>
+        <div class="col-xs-12 col-md-6 my-video hidden-xs">
+            <a href="javascript:;" class="thumbnail my-video-link" data-src="./video/vid-2.mp4">
+                <img src="img/video2.jpg" alt="...">
+            </a>
+            <h4 class="my-title-video">手机直播</h4>
+        </div>
+        <div class="col-xs-12 col-md-6 my-video hidden-xs">
+            <a href="javascript:;" class="thumbnail my-video-link" data-src="./video/vid-3.mp4">
+                <img src="img/video3.jpg" alt="...">
+            </a>
+            <h4 class="my-title-video">手机直播</h4>
+        </div>
+        <div class="col-xs-12 col-md-6 my-video hidden-xs">
+            <a href="javascript:;" class="thumbnail my-video-link" data-src="./video/vid-4.mp4">
+                <img src="img/video4.jpg" alt="...">
+            </a>
+            <h4 class="my-title-video">手机直播</h4>
+        </div>
+
+        <div class="col-xs-12 visible-xs">
+            <video width="100%" loop="true" preload="auto" preload="metadata" controls="controls" >
+                <source src="./video/vid-1.mp4">
+            </video>
+            <h4 class="my-title-video">手机直播</h4>
+        </div>
+        <div class="col-xs-12 visible-xs">
+            <video width="100%" loop="true" preload="auto" preload="metadata" controls="controls" >
+                <source src="./video/vid-2.mp4">
+            </video>
+            <h4 class="my-title-video">手机直播</h4>
+        </div>
+        <div class="col-xs-12 visible-xs">
+            <video width="100%" loop="true" preload="auto" preload="metadata" controls="controls" >
+                <source src="./video/vid-3.mp4">
+            </video>
+            <h4 class="my-title-video">手机直播</h4>
+        </div>
+        <div class="col-xs-12 visible-xs">
+            <video width="100%" loop="true" preload="auto" preload="metadata" controls="controls" >
+                <source src="./video/vid-4.mp4">
+            </video>
+            <h4 class="my-title-video">手机直播</h4>
+        </div>
+    </div>
+    <div id="item4" class="item row">
+        <div class="col-sm-12 my-title-big"><h1 class="my-title-big-t1">关于我们</h1></div>
+        <div class="my-gy row">
+            <div class="my-gy-pic col-xs-12 col-md-6">
+                <a href="javascript:;" class="thumbnail my-gy-p">
+                    <img src="./img/gy-1.png" alt="">
+                </a>
+            </div>
+            <div class="my-gy-wz col-xs-12 col-md-6">
+                <p class="my-gy-w">价值在线汇集了市场最权威的专家团队，均具有十余年证券市场
+                    从业经验，分别从法律法规、公司监管、资本运作、互联网技术、
+                    数据挖掘等专业层面给予产品核心依托，提供标准的合规产品设计、
+                    专业的合规业务咨询、独特的股东大会计票服务，以及投资者教育
+                    服务等。</p>
+            </div>
+        </div>
+        <div class="my-gy row">
+            <div class="my-gy-pic col-xs-12 col-md-6 pull-right">
+                <a href="javascript:;" class="thumbnail my-gy-p">
+                    <img src="./img/gy-2.png" alt="">
+                </a>
+            </div>
+            <div class="my-gy-wz col-xs-12 col-md-6">
+                <p class="my-gy-w">价值在线专家团队具备多年金融行业技术储备，拥有强大的IT技术支撑，
+                    首创资本市场合规信息化核心价值理念，以大数据为中心，挖掘资本市
+                    场核心价值，以全文检索为平台，重构中国资本市场法规体系，以移动
+                    互联为渠道，服务上市公司治理流程。</p>
+            </div>
+        </div>
+        <div class="my-gy row">
+            <div class="my-gy-pic col-xs-12 col-md-6">
+                <a href="javascript:;" class="thumbnail my-gy-p">
+                    <img src="./img/gy-3.png" alt="">
+                </a>
+            </div>
+            <div class="my-gy-wz col-xs-12 col-md-6">
+                <p class="my-gy-w">价值在线以合规为中心，利用互联技术和思维，搭建了“易董”产
+                    品及服务平台，并推出“投资词典”APP，围绕上市公司资本运作
+                    和投资者教育中国资本市场两大核心领域，首次提出合规信息化的
+                    理念，建立中国资本市场首个公司规范治理和合规信息化平台。</p>
+            </div>
+        </div>
+
+    </div>
+    <!--<div id="item5" class="item row">&nbsp;&nbsp;</div>-->
 </div>
+<footer id="item5">
+    <div class="my-foot container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-4 col-md-4">
+                <img alt="Brand" class="img-responsive" src="img/zbb-logo-bottom.png">
+                <h4 class="my-comp-title">深圳市直播帮有限公司</h4>
+            </div>
+            <div class="my-addr my-foot-cont col-xs-12 col-sm-4 col-md-4">
+                <address>
+                    <p><strong>地&nbsp;&nbsp;址&nbsp;&nbsp;:</strong>&nbsp;&nbsp;深圳市罗湖区莲塘仙湖山庄</p>
+                    <p><strong>电&nbsp;&nbsp;话&nbsp;&nbsp;:</strong>&nbsp;&nbsp;+86 13927472515&nbsp;&nbsp;&nbsp;苏先生</p>
+                    <p><strong>邮&nbsp;&nbsp;件&nbsp;&nbsp;:</strong>&nbsp;&nbsp;szr125@163.com</p>
+                </address>
+            </div>
+            <div class="my-foot-cont col-xs-12 col-sm-4 col-md-4">
+                <img src="img/ewm.jpg" class="my-ewm img-responsive ">
+                <p class="my-ewm-p">扫描二维码，加我微信</p>
+            </div>
+        </div>
+</footer>
+
+
+<!--引入jquery文件-->
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/nav.js"></script>
+<!--<script>
+    $(function(){
+        var video = $('video.wp-video-code');
+        video.hover(function(){
+            video[0].play() // play() 和 pause() 是HTML5中video自带的API函数
+        },function(){
+            video[0].pause()
+        });
+    });
+</script>-->
+<script>
+    $(function () {
+        $('.my-video-link').click(function() {
+            $('video').attr('src', $(this).attr('data-src'));
+            $(".hw-layer").fadeIn();
+            // 自动播放
+            $(".hw-layer video")[0].play()
+        });
+        //隐藏层
+        $('.hwLayer-close,.hw-layer').click(function () {
+            $('.hw-layer').fadeOut();
+            $(".hw-layer video")[0].pause()
+        });
+        $(document).keyup(function (event) {
+            if (event.keyCode == 27) {
+                $('.hw-layer').fadeOut();
+                $(".hw-layer video")[0].pause()
+            }
+        });
+    });
+
+/*    $(window).scroll(function () {
+        if ($(window).scrollTop() >= $('#item3').offset().top) {
+            $('.my-video').slideDown(1000);
+        }
+    });*/
+
+</script>
 </body>
 </html>
